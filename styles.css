@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #000000; 
+    color: white;
+}
+
+header {
+    background-color: #000000; 
+	background-image: url(/icons/wp5794980.jpg);/* Fondo con imagen de Rick and Morty */
+	background-image: center;
+	background-size: cover;
+	text-align: center;
+    color: #ffffff;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+/* Estilo de los inputs y botones */
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #0f6316; 
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0f6316;
+}
+
+.container {
+    display: grid;
+    /* Crea columnas automáticas.*/
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #343837; 
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover; 
+}
+
+.card h2 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+.card .btn {
+    background-color: transparent;
+    border: 2px solid #ffffff; 
+    color: #ffffff;
+}
+
+.card .btn:hover {
+    background-color: #0f6316;
+    color: white;
+}
+
+.details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(32, 35, 41, 0.95); /* Fondo semitransparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.details div {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(26, 25, 25, 0.5);
+    margin-bottom: 20px;
+}
+
+.details img {
+    border-radius: 50%; 
+    margin-bottom: 15px;
+    border: 4px solid #0f6316;
+}
+
+.details p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.invisible {
+    display: none !important;
+}
