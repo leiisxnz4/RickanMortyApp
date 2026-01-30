@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: #000000; 
-	background-image: url(/icons/wp5794980.jpg);/* Fondo con imagen de Rick and Morty */
+	background-image: url("/icons/wp5794980.jpg");/* Fondo con imagen de Rick and Morty */
 	background-position: center;
 	background-size: cover;
 	text-align: center;
